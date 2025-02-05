@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Contest Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Programming Contest Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#platforms">Platforms</a></li>
+                <li><a href="#contests">Contests</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About</h2>
+            <p>Welcome to the hub for programming contests!</p>
+        </section>
+        <section id="platforms">
+            <h2>Platforms</h2>
+            <div class="platforms">
+                <div class="platform">Codeforces</div>
+                <div class="platform">LeetCode</div>
+                <div class="platform">HackerRank</div>
+                <div class="platform">AtCoder</div>
+                <div class="platform">TopCoder</div>
+            </div>
+        </section>
+        <section id="contests">
+            <h2>Contests</h2>
+            <input type="text" id="tableFilter" placeholder="Filter contests...">
+            <table id="contestTable">
+                <thead>
+                    <tr>
+                        <th>Website Name</th>
+                        <th>Contest Name</th>
+                        <th>Contest Link</th>
+                        <th>Solution Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Codeforces</td>
+                        <td>Codeforces Round #XXX</td>
+                        <td><a href="https://codeforces.com/contest/XXX">Contest Link</a></td>
+                        <td><a href="https://codeforces.com/contest/XXX/solutions">Solution Link</a></td>
+                    </tr>
+                    <tr>
+                        <td>LeetCode</td>
+                        <td>LeetCode Weekly Contest #XXX</td>
+                        <td><a href="https://leetcode.com/contest/weekly-contest-XXX">Contest Link</a></td>
+                        <td><a href="https://leetcode.com/contest/weekly-contest-XXX/solutions">Solution Link</a></td>
+                    </tr>
+                    <tr>
+                        <td>HackerRank</td>
+                        <td>HackerRank 101 Hack #XXX</td>
+                        <td><a href="https://hackerrank.com/contests/101hackXXX">Contest Link</a></td>
+                        <td><a href="https://hackerrank.com/contests/101hackXXX/solutions">Solution Link</a></td>
+                    </tr>
+                    <tr>
+                        <td>AtCoder</td>
+                        <td>AtCoder Beginner Contest #XXX</td>
+                        <td><a href="https://atcoder.jp/contests/abcXXX">Contest Link</a></td>
+                        <td><a href="https://atcoder.jp/contests/abcXXX/tasks">Solution Link</a></td>
+                    </tr>
+                    <tr>
+                        <td>TopCoder</td>
+                        <td>TopCoder SRM #XXX</td>
+                        <td><a href="https://topcoder.com/contests/srmXXX">Contest Link</a></td>
+                        <td><a href="https://topcoder.com/contests/srmXXX/solutions">Solution Link</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Programming Contest Website</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
