@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html class="js-focus-visible js" data-js-focus-visible="" lang="en">
+
+<head>
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJ4Y6D29PK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-BJ4Y6D29PK');
+    </script>
+
+    <!--Adsense code----------------------------------->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8515204584571597"
+        crossorigin="anonymous"></script>
+
+    <!--yandex verify----------------->
+    <meta name="yandex-verification" content="448e3d1312fa4ec7" />
+
+    <!--search console------------------>
+    <meta name="google-site-verification" content="-TJmyx1uSKdfIJ5SZNObuasnHwj6V0rAHd5LsfqjWoM" />
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="TODO: Add own dec">
+    <meta name="author" content="Saravm Solutionam">
+    <meta name="keywords"
+        content="github,leetcode,solutions,code,leetcode solutions,leetcode questions,leetcode java,leetcode practice,leetcode python,leetcode cpp,leetcode python3,leetcodehelp,leetcodehelp github io, codeforce, codeforce contest">
+
+
+    <title>Codeforce Solutions</title>
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+
+    <meta property="og:title" content="Codeforce Solutions" />
+
+    <meta name="description" content="TODO: Add own dec">
+    <meta property="og:image" content="" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1080" />
+    <meta property="og:image:height" content="568" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/a11y-light.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/css/navbar.css">
+    </link>
+    <link rel="stylesheet" type="text/css" href="/data/css/style.css">
+    </link>
+
+
+    <!--adsense code goes here--------->
+
+</head>
+
+<body style="margin: 0px;">
+    <!--navbar ------->
+    <div class="navbar" style="position: fixed; top: 0; width: 100%; z-index: 1000;">
+        <a href="/">Home</a>
+        <div class="dropdown">
+            <a href="/data/codeforces">Codeforce Problems Solutions</a>
+        </div>
+    </div>
+    <!--navbar-------------->
+
+    <!-- problem content -->
+    <div style="margin: 10px;">
+        <div id="mySidebar" class="sidebar"  style="margin-top: 40px;">
+            <button class="closebtn" onclick="closeNav()">×</button>
+
+            <a href="/">Home</a>
+            <p></p>
+            <script>
+                fetch('contest.json')
+                    .then(response => response.json())
+                    .then(data => {
+                        const sidebar = document.getElementById('mySidebar');
+                        data.contest.problems.forEach(problem => {
+                            const link = document.createElement('a');
+                            link.href = problem.solutionLink;
+                            link.textContent = problem.name;
+                            sidebar.appendChild(link);
+                        });
+                    })
+                    .catch(error => console.error('Error fetching contest data:', error));
+            </script>
+        </div>
+
+        <div id="main" style="margin-top: 60px;"></div>
+        <button class="openbtn" onclick="openNav()">☰Codeforce Contest Problems</button>
+        <p></p>
+        <h2>CodeForce Solutions</h2>
+
+        <div style="background-color: white; padding-left: 10px; padding-bottom: 5px; padding-top: 7px;">
+
+            <a href="https://leetcode.com/problems/sum-of-left-leaves" target="_blank"
+                style="color: black; font-size: 20px;">404. Sum of Left Leaves</a>
+            <p><img alt="" src="https://img.shields.io/badge/-Easy-00a690.svg?style=for-the-badge" /></p>
+            <p><img alt="" src="https://img.shields.io/badge/-Tree-2c6e49.svg?style=flat-square" /> <img alt=""
+                    src="https://img.shields.io/badge/-Depth--First Search-ffc9b9.svg?style=flat-square" /> <img alt=""
+                    src="https://img.shields.io/badge/-Breadth--First Search-642ca9.svg?style=flat-square" /> <img
+                    alt="" src="https://img.shields.io/badge/-Binary Tree-b0c4b1.svg?style=flat-square" /></p>
+            <p></p> Time: $O(n)$<p></p> Space: $O(h)$<p></p>
+        </div>
+
+        <p></p>
+        <p></p>
+        <p></p>
+        <!-----------
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8515204584571597"
+         crossorigin="anonymous"></script>
+    ---side bar --
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-8515204584571597"
+         data-ad-slot="7480124565"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    --------------->
+
+        <button class="btn-lan">C++</button>
+        <button class="btn" onclick="copyToClipboard('#p1')">Copy</button>
+
+        <pre>
+            <code id="p1" class="language-c++" style="font-size: 20px;"><td class="code">
+<div><pre><span></span><code>
+<span class="k">class</span><span class="w"> </span><span class="nc">Solution</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w"> </span><span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="n">sumOfLeftLeaves</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span><span class="w"> </span><span class="n">root</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">root</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="k">nullptr</span><span class="p">)</span><span class="w"></span>
+<span class="w">      </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">ans</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">left</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">left</span><span class="o">-&gt;</span><span class="n">left</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="k">nullptr</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">root</span><span class="o">-&gt;</span><span class="n">left</span><span class="o">-&gt;</span><span class="n">right</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="k">nullptr</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="n">ans</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">root</span><span class="o">-&gt;</span><span class="n">left</span><span class="o">-&gt;</span><span class="n">val</span><span class="p">;</span><span class="w"></span>
+<span class="w">      </span><span class="k">else</span><span class="w"></span>
+<span class="w">        </span><span class="n">ans</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">sumOfLeftLeaves</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">left</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="n">ans</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">sumOfLeftLeaves</span><span class="p">(</span><span class="n">root</span><span class="o">-&gt;</span><span class="n">right</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">ans</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
+</code>
+</pre></div></td></code></pre></div>
+
+
+    </div>
+    <!-- problem content -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <script src="/data/js/addnew.js"></script>
+    <script src="/data/js/dropdown.js"></script>
+    <script src="/data/js/copytoclipboard.js"></script>
+    <script src="/data/js/sidebar.js"></script>
+
+</body>
+
+</html>
